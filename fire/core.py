@@ -167,7 +167,7 @@ def Fire(component=None, command=None, name=None):
 
 def Display(lines, out):
   text = '\n'.join(lines) + '\n'
-  console_io.More(text, out=out)
+  print(text, file=out)
 
 
 def CompletionScript(name, component, shell):
