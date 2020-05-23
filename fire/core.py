@@ -107,7 +107,6 @@ def Fire(component=None, command=None, name=None):
         FireExit with code 0 if successful.
   """
   name = name or os.path.basename(sys.argv[0])
-
   # Get args as a list.
   if isinstance(command, six.string_types):
     args = shlex.split(command)
